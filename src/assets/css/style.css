@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Titillium+Web:wght@200&display=swap&family=Source+Sans+Pro&display=swap');
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+body
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    background:  url("../img/avodavanti.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+body::-webkit-scrollbar
+{
+    display: none;
+}
+.body-cover
+{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 225, 97,0.7);
+    z-index: 0;
+}
+.input-text
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    border-bottom: solid black 2px;
+    outline: none;
+    padding: 3px;
+    font-size: 18px;
+    transition: 0.3s;
+    min-width: 220px;
+    background-color: transparent;
+}
+.input-text + label
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    opacity: 0.6;
+    position: relative;
+    top: -17px;
+    left: 3px;
+    font-size: 20px;
+    pointer-events: none;
+    transition: 0.3s;
+    height: 0;
+    line-height: 0;
+}
+.input-text:valid + label, .input-text:focus + label,.input-text:-webkit-autofill + label
+{
+    font-size: 14px;
+    top: -40px;
+    font-weight: bold;
+}
+.input-container /* div che contiene label e input */
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.button
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #5580ff ;
+    border-color: #5580ff ;
+    color: #ffffff ;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 20%);
+    font-weight: 600;
+    border-width: 1px;
+    font-style: normal;
+    margin: 0.6rem 0.6rem;
+    white-space: normal;
+    transition: all 0.2s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-word;
+    padding: 0.6rem 1.2rem;
+    border-radius: 100px;
+    font-size: 20px;
+}
+input[type="radio"],input[type="checkbox"]
+{
+    transform: scale(1.5); 
+    outline: none; 
+}
+.err
+{
+    margin: 0;
+    color: red;
+    position: absolute;
+    bottom: 15px;
+}
+.orizz
+{
+    display: flex;
+    justify-content: space-between;
+}
+.back-arrow
+{
+    color: black;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+/*_____________header__________*/
+header
+{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0 10px 55px 5px rgb(137 173 255 / 35%);
+    z-index: 999;
+}
+.logo-nav
+{
+    display: flex;
+    width: max-content;
+    align-items: center;
+}
+.logo-nav > img:first-child
+{
+    width: 80px;
+}
+.logo-nav > img:last-child
+{
+    margin-left: 20px;
+    width: 220px;
+    height: max-content;
+}
+.user-nav
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2%;
+    align-items: center;
+}
+.user-nav > a
+{
+    text-decoration: none;
+    font-size: 15px;
+    height: 0; 
+    color: black;
+}
+.user-nav > a:hover
+{
+    text-decoration: underline;
+}
+.user-nav > h4
+{
+    margin-right: 10px;
+    font-size: 18px;
+    margin: 0;
+}
+
+/*_____________login-page_________*/
+.login-content
+{
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-form
+{
+    width: 500px;
+    height: 600px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 10px 55px 5px rgb(137 173 255 / 35%);
+    position: relative;
+}
+.login-form-img
+{
+    width: 80%;
+}
+/*_____________upload-data_________*/
+.preview
+{
+    width: 65%;
+}
+.content-container
+{
+    top: 170px;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upload-data-form
+{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 55px 5px rgb(137 173 255 / 35%);
+    min-width: 663px;
+    position: relative;
+    padding-bottom: 30px;
+    height: min-content;
+    margin-bottom: 50px;
+}
+.upload-data-form > h1 
+{
+    font-family: 'Source Sans Pro', sans-serif; 
+}
+.certificate-selection
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 230px;
+    transition: 0.3s ease;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+.certificate-selection:hover
+{
+    background-color: rgba(255, 225, 97,0.7);
+}
+.certificate-selection > input[type="radio"],.certificate-selection > input[type="checkbox"]
+{
+    pointer-events: none;
+}
+.certificate-selection > img
+{
+    width: 200px;
+}
+.certificate-container
+{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    height: 220px;
+}
+.upload-certificate
+{
+    margin-top: 40px;
+    font-family: 'Source Sans Pro', sans-serif; 
+    display: flex;
+}
+.manual-upload-form
+{
+    height: max-content;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.manual-upload-form > .input-container, .manual-upload-form > .orizz
+{
+    margin-top: 32px;
+}
+.delete-btn
+{
+    background-color: rgb(250, 97, 70);
+    position: absolute;
+    top: 50%;
+    left: -70px;
+    transform: translateY(-50%);
+    width: max-content;
+    border-color: rgb(253, 111, 92);
+}
+.check-download
+{
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-between;
+    width: 100px;
+}
+/*_____________add-users________*/
+.add-user-form
+{
+    background-color: white;
+    width: 40%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 55px 5px rgb(137 173 255 / 35%);
+    position: relative;
+}
+.addUser
+{
+    min-width: 350px;
+}
+/*_____________send-PDF________*/
+.send-certificate-container
+{
+    height: 70%;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    width: 85%;
+    overflow-y: auto;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill,250px); 
+    justify-content: center;  
+    padding: 10px 0;
+}
+.send-certificate
+{
+    height: 250px;
+}
+.send-certificate > h4
+{
+    margin: 0;
+}
+/*________home-selection______*/
+.home-sele
+{
+    width: 40%;
+    max-width: 300px;
+    background-color: white;
+    box-shadow: 0 10px 55px 5px rgb(137 173 255 / 35%);
+    display: flex;
+    flex-direction: column;
+    align-content:space-around;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    padding: 20px;
+}
+.home-sele > h1
+{
+    margin: 20px auto;
+    width: max-content;
+}
+.home-sele > a
+{
+   text-decoration: none;
+}
+/*________template-wizard_______*/
+.wizard-pick-component-container
+{
+    background-color: white;
+    width: 80%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 55px 5px rgb(137 173 255 / 35%);
+    position: relative;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+}
+.wizard-pick-component
+{
+    width: 80%;
+    display: flex;
+    border-bottom: black 1px solid;
+    border-top: black 1px solid;
+    overflow-x: auto;
+}
+.wizard-pick-component-container > h2, 
+.wizard-pick-component-container > input[type="submit"], 
+.wizard-pick-component-container > .input-container
+{
+    margin-top: 40px;
+}

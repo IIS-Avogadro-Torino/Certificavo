@@ -1,0 +1,16 @@
+:root {
+    /*colors*/
+    --clr-err: red;
+    --clr-err-ligth: rgb(250, 97, 70);
+    --clr--background: white;
+    --clr--background-shade: rgba(255, 225, 97,0.7);
+    --clr-border: black;
+    --clr-btn: #5580ff;
+
+
+    /*box shadow*/
+    --box-shadow: 0 10px 55px 5px rgb(137 173 255 / 35%);
+
+    /*fonts*/
+    --font-main: 'Source Sans Pro', sans-serif;
+}

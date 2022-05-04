@@ -1,0 +1,47 @@
+.page-container {
+    top: 170px;
+    background-color: var(--clr--background);
+    width: 80%;
+    max-width: 1050px;
+    gap: 28px;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    margin: auto;
+    margin-bottom: 150px;
+    padding: 40px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-container--nogap {
+    gap: 0;
+}
+
+.page-container--eqwidth > *:not(h1,h2,h3,h5,p) {
+    width: 100%;
+}
+
+.page-container--fit {
+    width: max-content;
+}
+
+.login-container {
+    gap: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container {
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inline-item 
+{
+    display: flex;
+    justify-content: space-between;
+}

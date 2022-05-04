@@ -1,0 +1,211 @@
+/*_________input text_________*/
+.input-text
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.input-text__text
+{
+    font-family: var(--font-main);
+    border: none;
+    border-bottom: solid var(--clr-border) 2px;
+    outline: none;
+    padding: 3px;
+    font-size: 18px;
+    transition: 0.3s;
+    min-width: 120px;
+    background-color: transparent;
+    width:100%;
+}
+.input-text__text + label
+{
+    font-family: var(--font-main);
+    opacity: 0.6;
+    position: relative;
+    top: -17px;
+    left: 3px;
+    font-size: 20px;
+    pointer-events: none;
+    transition: 0.3s;
+    height: 0;
+    line-height: 0;
+}
+.input-text__text:valid + label,
+.input-text__text:focus + label,
+.input-text__text:-webkit-autofill + label
+{
+    font-size: 14px;
+    top: -40px;
+    font-weight: bold;
+}
+/*_________text area______*/
+.input-text__area
+{
+    resize: none;
+    font-family: var(--font-main);
+    border: none;
+    outline: none;
+    border-bottom: solid var(--clr-border) 2px;
+    font-size: 18px;
+    min-height: 200px;
+}
+.input-text__area-label
+{
+    font-family: var(--font-main);
+    opacity: 0.6;
+    pointer-events: none;
+    transition: 0.3s;
+    height: 0;
+    line-height: 0;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+/*_________button_________*/
+.button
+{
+    text-decoration: none;
+    font-family: var(--font-main);
+    background-color: var(--clr-btn);
+    border-color: var(--clr-btn);
+    color: var(--clr--background);
+    box-shadow: var(--box-shadow);
+    font-weight: 600;
+    border-width: 1px;
+    font-style: normal;
+    margin: 0.6rem 0.6rem;
+    white-space: normal;
+    transition: all 0.2s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-word;
+    padding: 0.6rem 1.2rem;
+    border-radius: 100px;
+    font-size: 20px;
+    outline: none;
+}
+.delete-btn
+{
+    background-color: var(--clr-err-ligth);
+    position: absolute;
+    top: 50%;
+    left: -70px;
+    transform: translateY(-50%);
+    width: max-content;
+    border-color: var(--clr-err-ligth);
+}
+/*_____________back arrow__________*/
+.back-arrow
+{
+    color: var(--clr-border);
+    position: absolute;
+    display: flex;
+    left: 30px;
+    align-items: center;
+    top: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.back-arrow > svg
+{
+    transform: rotate(90deg);
+    height: 30px;
+}
+/*_____________nav__________*/
+header
+{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: var(--clr--background);
+    box-shadow: var(--box-shadow);
+    z-index: 999;
+}
+.logo-nav
+{
+    display: flex;
+    width: max-content;
+    align-items: center;
+}
+.logo-nav > img
+{
+    width: 296px;
+    height: max-content;
+}
+.user-nav
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2%;
+    align-items: center;
+}
+.user-nav > a
+{
+    text-decoration: none;
+    font-size: 15px;
+    height: 0; 
+    color: var(--clr-border);
+}
+.user-nav > a:hover
+{
+    text-decoration: underline;
+}
+.user-nav > h4
+{
+    margin-right: 10px;
+    font-size: 18px;
+    margin: 0;
+}
+/*_________search bar__________*/
+.search-bar
+{
+    border-radius: 50px;
+    outline: none;
+    padding: 8px;
+    border: 1px var(--clr-border) solid;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+/*_________template component slider__________*/
+.component-slider__card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 230px;
+    transition: 0.3s ease;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+.component-slider__card:hover
+{
+    background-color: var(--clr--background-shade);
+}
+.component-slider__card > input[type="radio"],.component-slider__card > input[type="checkbox"]
+{
+    pointer-events: none;
+}
+.component-slider__card > img
+{
+    width: 200px;
+}
+.component-slider
+{
+    width: 80%;
+    display: flex;
+    border-bottom: var(--clr-border) 1px solid;
+    border-top: var(--clr-border) 1px solid;
+    overflow-x: auto;
+}
+/*_________footer__________*/
+footer {
+    height: 100px;
+}

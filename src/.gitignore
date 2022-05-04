@@ -1,0 +1,12 @@
+/load.php
+/tmpPDF/*
+!/tmpPDF/.padding
+/log/*
+!/log/.padding
+/mails/*
+!/mails/default.txt
+/templates/*
+!/templates/components/*
+!/templates/esempio.png
+/keys/*
+!/keys/.padding

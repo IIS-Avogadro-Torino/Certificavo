@@ -1,0 +1,6 @@
+NOMEMIT=Futurelabs
+EMAILMIT=amministrazione_futurelabs@itisavogadro.it
+TITOLO=Certificato Futurelabs
+TESTO=Gentile corsista,[Invio]in allegato trovi l'attestato del corso [nomeCorso] da te superato presso l'Istituto Avogadro.[Invio][Invio]Grazie della fiducia accordata, a presto!
+FIRMA=Lo staff Futurelabs Avogadro
+ARCHIVIAZIONE=amministrazione_futurelabs@itisavogadro.it
